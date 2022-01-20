@@ -76,7 +76,7 @@ def get_album_details():
     release_date = convert_to_json['release_date']
     primary_artist = convert_to_json['primary_artists']
     songs = convert_to_json['songs']
-    album_image = convert_to_json['image'].replace("150x150","500x500")
+    album_image = convert_to_json['image'].replace("150x150","250x250")
 
     for i in range(len(songs)):
         songIDs.append(songs[i]['id'])
