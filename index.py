@@ -98,7 +98,7 @@ def play():
     song_name = fix_title(convert_to_json[songID]['song'])
     singers = convert_to_json[songID]['singers']
     year = convert_to_json[songID]['year']
-    image = convert_to_json[songID]['image'].replace("150x150","150x150")
+    image = convert_to_json[songID]['image'].replace("150x150","250x250")
 
     try:
      mp3_urls = fix_media_url(convert_to_json[songID]['media_preview_url'])
@@ -131,7 +131,7 @@ def search_song():
     for i in range(len(r)):
 
         songIDs.append(r[i]['id'])
-        images.append(r[i]['image'].replace("150x150","50x50"))
+        images.append(r[i]['image'].replace("150x150","150x150"))
         songs_titles.append(r[i]['title'])
         songs_subtitles.append(r[i]['subtitle'])
 
