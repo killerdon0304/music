@@ -57,7 +57,7 @@ def get_top_40():
 
      album_name.append(convert_to_json[i]['text'])
      year.append(convert_to_json[i]['year'])
-     images.append(convert_to_json[i]['image'].replace("150x150","250x250"))
+     images.append(convert_to_json[i]['image'].replace("150x150","150x150"))
      album_ids.append(convert_to_json[i]['albumid'])
 
     return render_template('home.html',album_name=album_name,year=year,images=images,album_ids=album_ids,zip=zip,language=language)
